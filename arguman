@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+$arguman = file_get_contents('http://arguman.org/api/v1/arguments/');
+$json 	 = json_decode($arguman);
+foreach($json->results as $feed){
+	echo "\xF0\x9F\x93\x92 \033[33m {$feed->title} \n";
+	echo "\033[37m {$feed->user->username} ekledi \n";
+	echo "\033[1;34m http://arguman.org/{$feed->slug} \n \n";
+}
