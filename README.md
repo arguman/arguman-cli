@@ -9,3 +9,8 @@ wget https://raw.githubusercontent.com/arguman/arguman-cli/master/arguman
 ```bash
 $ php arguman
 ```
+
+# Yapılacaklar
+
+- Giriş Yapma
+- Yeni Argüman Gönderme
